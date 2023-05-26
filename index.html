@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="stress.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>The 9 Series | The To-Do List</title>
+</head>
+<body id="body">
+    <div class="heading">
+        <h1>
+            The To-Do List
+        </h1>
+    </div>   
+    <div class="input-cont">
+        <h3>
+            What To Do:
+        </h3>
+        <div class="input">
+            <input type="text" id="input" required>
+            <button id="btn" onkeypress="clickkey(event)">
+                ADD
+            </button>
+            <button onclick="del()" id="btn">
+                CLEAR
+            </button>
+        </div>
+        <p class="warn"></p>
+    </div >
+    <ol class="outhere"> 
+        
+        
+    </ol>
+    <div class="btnss">
+        <div class="change">
+            <button id="bmode" onclick="onOff()" title="Switch Modes">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
